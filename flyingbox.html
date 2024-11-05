@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackGround</title>
+    <style>
+        body {
+            margin: auto;
+            padding: 0;
+            background-color: black;
+        }
+        .container {
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .text {
+            color: white;
+            font-family: cursive;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .sqr {
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            border-radius: 10%;
+            position: absolute;
+            bottom: -100px;
+            animation: box 9s linear infinite;
+        }
+        .sqr:nth-child(1) {
+            left: 0;
+            animation-duration: 7s;
+        }
+        .sqr:nth-child(2) {
+            left: 20%;
+            animation-duration: 6s;
+        }
+        .sqr:nth-child(3) {
+            left: 35%;
+            animation-duration: 7s;
+        }
+        .sqr:nth-child(4) {
+            left: 45%;
+            animation-duration: 6s;
+        }
+        .sqr:nth-child(5) {
+            left: 55%;
+            animation-duration: 8s;
+        }
+        .sqr:nth-child(6) {
+            left: 80%;
+            animation-duration: 8s;
+        }
+        .sqr:nth-child(7) {
+            left: 85%;
+            animation-duration: 9s;
+        }
+        .sqr:nth-child(8) {
+            left: 95%;
+            animation-duration: 9s;
+        }
+        @keyframes box {
+            0% {
+                top: -100%;
+                transform: rotate(0deg) rotate(-165deg) translate(-160px);
+            }
+            100% {
+                top: 120%;
+                transform: rotate(360deg) rotate(-360deg) translate(-160px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sqr"></div>
+        <div class="sqr"></div>
+        <div class="sqr"></div>
+        <div class="sqr"></div>
+        <div class="sqr"></div>
+        <div class="sqr"></div>
+        <div class="sqr"></div>
+        <div class="sqr"></div>
+        <div class="text"><h1>BackGround Animation</h1></div>
+    </div>
+</body>
+</html>
